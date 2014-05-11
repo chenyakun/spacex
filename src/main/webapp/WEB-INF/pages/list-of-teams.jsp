@@ -9,6 +9,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <title>List of teams</title>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/ckeditor/ckeditor.js"></script>
 </head>
 <body>
 <h1>List of teams</h1>
@@ -35,6 +36,18 @@
 </table>
 
 <p><a href="${pageContext.request.contextPath}/index.html">Home page</a></p>
+
+<hr>
+<form>
+		<textarea name="editor1" id="editor1" rows="10" cols="80">
+                This is my textarea to be replaced with CKEditor.
+            </textarea>
+		<script>
+			// Replace the <textarea id="editor1"> with a CKEditor
+			// instance, using default configuration.
+			CKEDITOR.replace('editor1');
+		</script>
+	</form>
 
 </body>
 </html>
