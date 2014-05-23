@@ -1,0 +1,61 @@
+.g-hd {
+    background-image: url(bgxh.jpg);
+    background-attachment: fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+}
+
+.hdbg2, .m-page a:hover {
+    /*background: #131313;*/
+    /*background: #3d9c85;*/
+    background:-webkit-gradient(linear, 0% 0%, 0 100%, from(#48bafe), to(#0c9869));
+    opacity: .6;
+
+}
+
+a, .subinfo2 a, .text h2 a:hover, .m-page a {
+    color: #131313;
+}
+
+.tit a {
+    color: #ffffff;
+}
+
+.about {
+    color: honeydew;
+    font: "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1";
+    font-size: 2em;
+}
+
+.m-nav, .m-nav .moreList li, .g-ft, .g-ft a, .m-nav .moreList {
+    background: #000000;
+}
+
+.m-nav a, .g-ft, .g-ft a {
+    color: #ffffff;
+}
+
+body {
+    background: #e2e5e5;
+}
+
+.g-hd {
+    z-index: 10;
+}
+
+.g-mn {
+    z-index: 3;
+    margin-bottom: 100px;
+}
+
+.m-nav .moreList li {
+    _float: left;
+  /*   height: 505px; */
+    overflow: hidden;
+    _white-space: nowrap;
+}
+
+.m-nav .moreList li a {
+    _display: block;
+}

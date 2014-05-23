@@ -48,6 +48,12 @@ public class WebAppConfig extends WebMvcConfigurerAdapter{
 		dataSource.setUsername(env.getRequiredProperty(PROPERTY_NAME_DATABASE_USERNAME));
 		dataSource.setPassword(env.getRequiredProperty(PROPERTY_NAME_DATABASE_PASSWORD));
 		
+//		dataSource.setDriverClassName(env.getRequiredProperty(PROPERTY_NAME_DATABASE_DRIVER));
+//		dataSource.setUrl("jdbc:mysql://w.rdc.sae.sina.com.cn:3307/daylog");
+//		dataSource.setUsername(SaeUserInfo.getAccessKey());
+//		dataSource.setPassword(SaeUserInfo.getSecretKey());
+		
+		
 		return dataSource;
 	}
 	

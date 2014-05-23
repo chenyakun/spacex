@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Adapter &mdash; CKEditor Sample</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="ckeditor/ckeditor.js"></script>
+	<script src="ckeditor/adapters/jquery.js"></script>
+	<link href="ckeditor/sample.css" rel="stylesheet">
+	<style>
+
+		#editable
+		{
+			padding: 10px;
+			float: left;
+		}
+
+	</style>
+	<script>
+
+		CKEDITOR.disableAutoInline = true;
+
+		$( document ).ready( function() {
+			$( '#textContent' ).ckeditor(); // Use CKEDITOR.replace() if element is <textarea>.
+			$( '#editable' ).ckeditor(); // Use CKEDITOR.inline().
+		} );
+
+		function setValue() {
+			$( '#textContent' ).val( $( 'input#val' ).val() );
+		}
+
+	</script>
+</head>
+<body>
+	<form action="../text/add" method="post">
+	
+		<input type="text"  id="pid" name="pid"/>
+
+		<textarea cols="80" id="textContent" name="textContent" rows="10">
+			hello ckeditor.
+		</textarea>
+
+		<p style="overflow: hidden">
+			<input style="float: left" type="submit" value="Submit">
+			<span style="float: right">
+				<input type="text" id="val" value="I'm using jQuery val()!" size="30">
+				<input onclick="setValue();" type="button" value="Set value">
+			</span>
+		</p>
+	</form>
+ 
+</body>
+</html>

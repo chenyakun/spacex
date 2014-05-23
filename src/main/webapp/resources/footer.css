@@ -1,0 +1,196 @@
+
+#footer{
+     
+    position: relative;
+    top: -30px;
+     
+/*     position: fixed;
+    bottom: 0px; */
+
+}
+
+/*footer*/
+
+ul.style1
+{
+    list-style: disc;
+    padding-left: 1.5em;
+}
+
+ul.style2
+{
+}
+
+ul.style2 > li
+{
+    border-top: solid 2px #e7eae8;
+    padding-top: 2.35em;
+    margin-top: 2.35em;
+}
+
+ul.style2 > li:first-child
+{
+    border-top: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+ul.contact
+{
+    text-align: center;
+}
+
+ul.contact li
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 0.25em 0 0.25em;
+    top: 0;
+    -moz-transition: top .15s ease-in-out;
+    -webkit-transition: top .15s ease-in-out;
+    -o-transition: top .15s ease-in-out;
+    -ms-transition: top .15s ease-in-out;
+    transition: top .15s ease-in-out;
+}
+
+ul.contact li a
+{
+    display: block;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    outline: 0;
+    -moz-transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out;
+    -ms-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+    background: #c1cac5;
+    text-align: center;
+}
+
+ul.contact li a:before
+{
+    color: #f2f5f3;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+ul.contact li:hover a.fa-weibo		{ background-color: #DA2713; }
+ul.contact li:hover a.fa-github		{ background-color: #626261; }
+ul.contact li:hover a.fa-phone			{ background-color: #4df285; }
+ul.contact li:hover a.fa-envelope-o		{ background-color: #3f77c4; }
+ul.contact li:hover a.fa-comments	{ background-color: #0c9869; }
+
+.fa.solo span{
+    display: none;
+}
+
+
+ul.contact li:hover
+{
+    top: -10px;
+}
+
+ul.contact li:active
+{
+    top: 0;
+}
+
+ul.special
+{
+}
+
+ul.special li
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 1.5em 0 1.5em;
+    top: 0;
+    -moz-transition: top .15s ease-in-out;
+    -webkit-transition: top .15s ease-in-out;
+    -o-transition: top .15s ease-in-out;
+    -ms-transition: top .15s ease-in-out;
+    transition: top .15s ease-in-out;
+}
+
+ul.special li:hover
+{
+    top: -10px;
+}
+
+ul.special li:hover a
+{
+    background: #b9d2ce;
+}
+
+ul.special a
+{
+    display: block;
+    position: relative;
+    background: #c1cac5;
+    width: 12em;
+    height: 12em;
+    border-radius: 6em;
+    outline: 0;
+    -moz-transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out;
+    -ms-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+}
+
+ul.special a:before
+{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    font-size: 96px;
+    line-height: 128px;
+    left: 50%;
+    top: 50%;
+    margin-top: -64px;
+    margin-left: -64px;
+    color: #fff;
+}
+
+ul.meta
+{
+    font-size: 0.85em;
+    color: #a1aaa5;
+}
+
+ul.meta li
+{
+    position: relative;
+    display: inline-block;
+    padding-left: 24px;
+    margin-left: 1em;
+}
+
+ul.meta li a
+{
+    color: inherit;
+    outline: 0;
+}
+
+ul.meta li:first-child
+{
+    margin-left: 0;
+}
+
+ul.meta li:before
+{
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    opacity: 0.5;
+    cursor: default;
+}
+
+/*background: #e7eae8;*/
