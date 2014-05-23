@@ -20,6 +20,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
+import com.sina.sae.util.SaeUserInfo;
+
 @Configuration
 @ComponentScan("com.sprhib")
 @EnableWebMvc
@@ -43,15 +45,15 @@ public class WebAppConfig extends WebMvcConfigurerAdapter{
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		
-		dataSource.setDriverClassName(env.getRequiredProperty(PROPERTY_NAME_DATABASE_DRIVER));
-		dataSource.setUrl(env.getRequiredProperty(PROPERTY_NAME_DATABASE_URL));
-		dataSource.setUsername(env.getRequiredProperty(PROPERTY_NAME_DATABASE_USERNAME));
-		dataSource.setPassword(env.getRequiredProperty(PROPERTY_NAME_DATABASE_PASSWORD));
-		
 //		dataSource.setDriverClassName(env.getRequiredProperty(PROPERTY_NAME_DATABASE_DRIVER));
-//		dataSource.setUrl("jdbc:mysql://w.rdc.sae.sina.com.cn:3307/daylog");
-//		dataSource.setUsername(SaeUserInfo.getAccessKey());
-//		dataSource.setPassword(SaeUserInfo.getSecretKey());
+//		dataSource.setUrl(env.getRequiredProperty(PROPERTY_NAME_DATABASE_URL));
+//		dataSource.setUsername(env.getRequiredProperty(PROPERTY_NAME_DATABASE_USERNAME));
+//		dataSource.setPassword(env.getRequiredProperty(PROPERTY_NAME_DATABASE_PASSWORD));
+		
+		dataSource.setDriverClassName(env.getRequiredProperty(PROPERTY_NAME_DATABASE_DRIVER));
+		dataSource.setUrl("jdbc:mysql://w.rdc.sae.sina.com.cn:3307/daylog");
+		dataSource.setUsername(SaeUserInfo.getAccessKey());
+		dataSource.setPassword(SaeUserInfo.getSecretKey());
 		
 		
 		return dataSource;
