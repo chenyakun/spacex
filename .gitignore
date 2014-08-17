@@ -3,6 +3,11 @@ _gh_pages
 _site
 .ruby-version
 
+# Ignore  project relative files
+*.MF
+output
+target
+
 #Ignore java class files
 *.class
 
