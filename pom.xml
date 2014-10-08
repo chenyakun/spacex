@@ -111,7 +111,7 @@
 			<id>spring-maven-milestone</id>
 			<name>Spring Maven Milestone Repository</name>
 			<url>http://maven.springframework.org/milestone</url>
-		</repository> 
+		</repository>
 		 <repository>
 			<id>project-local</id>
 			<name>Local dependencies for project</name>
@@ -137,8 +137,8 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.1-beta-1</version>
 				<configuration>
-					<directory>src/main/webapp/WEB-INF</directory>
-					<targetPath>WEB-INF</targetPath>
+					<!--directory>src/main/webapp/WEB-INF</directory>
+					<targetPath>WEB-INF</targetPath-->
 				</configuration>
 			</plugin>
 		</plugins>
